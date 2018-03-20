@@ -1,7 +1,16 @@
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        System.out.println((int)(4.6));
+        ArrayList<O> arrayList = new ArrayList<O>();
+        O o1 = new O("a");
+        arrayList.add(o1);
+        o1 = new O("b");
+        arrayList.add(o1);
+        for (O e : arrayList){
+            System.out.println(e.nameOfO);
+        }
+
     }
 }
